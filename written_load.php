@@ -27,6 +27,8 @@ while (($row = fgetcsv($fileHandle, 0, ",")) !== FALSE) {
     echo '<br>';
 	*/
 	
+	
+	
 	$sql1="select * from userinfo where username = '$row[6]'";
 	$query1=mysql_query($sql1,$con);
 	$row1=mysql_fetch_array($query1);
